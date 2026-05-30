@@ -119,7 +119,7 @@ def mass_converter():
     if mass_input in mass_input_list:
         mass_output_list = ['g', 'kg', 'lb', 'oz', 'ct']
         mass_output_list.remove(mass_input)
-        mass_output_list_question = mass_output_list[0] + ", " + mass_output_list[1] + ", " + mass_output_list[2] + ", " + mass_output_list[3]
+        mass_output_list_question = mass_output_list[0] + ", " + mass_output_list[1] + ", " + mass_output_list[2] + " or " + mass_output_list[3]
         mass_output = input('Select the mass unit you want: ' + str(mass_output_list_question) + "? ")
         if mass_output in mass_output_list:
             data = input('Enter your mass: ')

@@ -8,7 +8,7 @@ def length_converter():
     if length_input in length_input_list:
         length_output_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi', 'nmi', 'au', 'ly', 'pc']
         length_output_list.remove(length_input)
-        length_output_list_question = length_output_list[0] + ", " + length_output_list[1] + ", " + length_output_list[2] + ", " + length_output_list[3]
+        length_output_list_question = length_output_list[0] + ", " + length_output_list[1] + ", " + length_output_list[2] + ", " + length_output_list[3] + ", " + length_output_list[4] + ", " + length_output_list[5] + ", " + length_output_list[6] + ", " + length_output_list[7] + ", " + length_output_list[8] + ", " + length_output_list[9] + ", " + length_output_list[10] + ", " + length_output_list[11] + ", " + length_output_list[12] + ", " + length_output_list[13] + " or " + length_output_list[14]
         length_output = input('Select the length unit you want: ' + str(length_output_list_question) + "? ")
         if length_output in length_output_list:
             data = input('Enter your length: ')
