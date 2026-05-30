@@ -1,8 +1,45 @@
 # Unit Converter
 
+# Grams
 # Grams to Kilograms
 def g_to_kg(x):
-    sum = float(x) * float(10**(-3))
+    sum = float(x) / float(10**(3))
+    return str(sum)
+
+# Grams to Pounds
+def g_to_lb(x):
+    sum = float(x) / float(453.59237)
+    return str(sum)
+
+# Grams to Ounces
+def g_to_oz(x):
+    sum = float(x) / float(28.34952)
+    return str(sum)
+
+# Grams to Ounces
+def g_to_ct(x):
+    sum = float(x) * float(5)
+    return str(sum)
+
+# Kilograms
+# Kilograms to Grams
+def kg_to_g(x):
+    sum = float(x) * float(10**(3))
+    return str(sum)
+
+# Kilograms to Pounds
+def kg_to_lb(x):
+    sum = float(x) / float(0.45359237)
+    return str(sum)
+
+# Kilograms to Ounces
+def kg_to_oz(x):
+    sum = float(x) * float(35.27396195)
+    return str(sum)
+
+# Kilograms to Ounces
+def kg_to_ct(x):
+    sum = float(x) * float(5000)
     return str(sum)
 
 # CLI
