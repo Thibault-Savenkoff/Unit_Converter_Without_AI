@@ -1,6 +1,12 @@
 # Unit Converter
 
+
+# Maths Code
+
+# Mass
+
 # Grams
+
 # Grams to Kilograms
 def g_to_kg(x):
     sum = float(x) / float(10**(3))
@@ -16,12 +22,13 @@ def g_to_oz(x):
     sum = float(x) / float(28.34952)
     return str(sum)
 
-# Grams to Ounces
+# Grams to Carats
 def g_to_ct(x):
     sum = float(x) * float(5)
     return str(sum)
 
 # Kilograms
+
 # Kilograms to Grams
 def kg_to_g(x):
     sum = float(x) * float(10**(3))
@@ -37,9 +44,75 @@ def kg_to_oz(x):
     sum = float(x) * float(35.27396195)
     return str(sum)
 
-# Kilograms to Ounces
+# Kilograms to Carats
 def kg_to_ct(x):
-    sum = float(x) * float(5000)
+    sum = float(x) * float(5*10**3)
+    return str(sum)
+
+# Pounds
+
+# Pounds to Grams
+def lb_to_g(x):
+    sum = float(x) * float(453.59290944)
+    return str(sum)
+
+# Pounds to Kilograms
+def lb_to_kg(x):
+    sum = float(x) / float(2.20462)
+    return str(sum)
+
+# Pounds to Ounces
+def lb_to_oz(x):
+    sum = float(x) * float(16)
+    return str(sum)
+
+# Pounds to Carats
+def lb_to_ct(x):
+    sum = float(x) * float(2267.96454718)
+    return str(sum)
+
+# Ounces
+
+# Ounces to Grams
+def oz_to_g(x):
+    sum = float(x) * float(28.34949254)
+    return str(sum)
+
+# Ounces to Kilograms
+def oz_to_kg(x):
+    sum = float(x) / float(35.27400317)
+    return str(sum)
+
+# Ounces to Pounds
+def oz_to_lb(x):
+    sum = float(x) / float(16)
+    return str(sum)
+
+# Ounces to Carats
+def oz_to_ct(x):
+    sum = float(x) * float(141.74746272)
+    return str(sum)
+
+# Carats
+
+# Carats to Grams
+def ct_to_g(x):
+    sum = float(x) / float(5)
+    return str(sum)
+
+# Carats to Kilograms
+def ct_to_kg(x):
+    sum = float(x) / float(5*10**3)
+    return str(sum)
+
+# Carats to Pounds
+def ct_to_lb(x):
+    sum = float(x) / float(2267.98512202)
+    return str(sum)
+
+# Carats to Ounces
+def ct_to_oz(x):
+    sum = float(x) / float(141.74746272)
     return str(sum)
 
 # CLI
@@ -76,7 +149,7 @@ if home == 2:
             if mass_input == mass_input_list[0] and mass_output == mass_output_list[3]:
                 print('Result: ' + g_to_ct(data) + " " + mass_output)
 
-            # Kilogram
+            # Kilograms
             if mass_input == mass_input_list[1] and mass_output == mass_output_list[0]:
                 print('Result: ' + kg_to_g(data) + " " + mass_output)
             if mass_input == mass_input_list[1] and mass_output == mass_output_list[1]:
@@ -86,7 +159,7 @@ if home == 2:
             if mass_input == mass_input_list[1] and mass_output == mass_output_list[3]:
                 print('Result: ' + kg_to_ct(data) + " " + mass_output)
 
-            # Pound
+            # Pounds
             if mass_input == mass_input_list[2] and mass_output == mass_output_list[0]:
                 print('Result: ' + lb_to_g(data) + " " + mass_output)
             if mass_input == mass_input_list[2] and mass_output == mass_output_list[1]:
@@ -96,7 +169,7 @@ if home == 2:
             if mass_input == mass_input_list[2] and mass_output == mass_output_list[3]:
                 print('Result: ' + lb_to_ct(data) + " " + mass_output)
 
-            # Ounce
+            # Ounces
             if mass_input == mass_input_list[3] and mass_output == mass_output_list[0]:
                 print('Result: ' + oz_to_g(data) + " " + mass_output)
             if mass_input == mass_input_list[3] and mass_output == mass_output_list[1]:
@@ -106,7 +179,7 @@ if home == 2:
             if mass_input == mass_input_list[3] and mass_output == mass_output_list[3]:
                 print('Result: ' + oz_to_ct(data) + " " + mass_output)
 
-            # Carat
+            # Carats
             if mass_input == mass_input_list[4] and mass_output == mass_output_list[0]:
                 print('Result: ' + ct_to_g(data) + " " + mass_output)
             if mass_input == mass_input_list[4] and mass_output == mass_output_list[1]:
