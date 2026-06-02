@@ -2,13 +2,60 @@
 
 # Maths Code
 
+# Nanometers
+
+# Nanometers to Micrometers
+def nm_to_µm(x):
+    sum = float(x) * float(10**(-3))
+    return str(sum)
+
+# Nanometers to Millimeters
+def nm_to_mm(x):
+    sum = float(x) * float(10**(-6))
+    return str(sum)
+
+# Nanometers to Centimeters
+def nm_to_cm(x):
+    sum = float(x) * float(10**(-7))
+    return str(sum)
+
+# Nanometers to Meters
+def nm_to_m(x):
+    sum = float(x) * float(10**(-9))
+    return str(sum)
+
+# Nanometers to Kilometers
+def nm_to_km(x):
+    sum = float(x) * float(10**(-12))
+    return str(sum)
+
+# Nanometers to Inchs
+def nm_to_in(x):
+    sum = float(x) * float(3.9370078740157*10**(-8))
+    return str(sum)
+
+# Nanometers to Feet
+def nm_to_ft(x):
+    sum = float(x) * float(3.2808398950131*10**(-9))
+    return str(sum)
+
+# Nanometers to Yards
+def nm_to_yd(x):
+    sum = float(x) * float(1.0936132983377*10**(-9))
+    return str(sum)
+
+# Nanometers to Miles
+def nm_to_mi(x):
+    sum = float(x) * float(6.2137119223733*10**(-13))
+    return str(sum)
+
 def length_converter():
-    length_input = input('Select your length unit: nm, µm, mm, cm, dm, m, km, in, ft, yd, mi, nmi, au, ly or pc? ')
-    length_input_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi', 'nmi', 'au', 'ly', 'pc']
+    length_input = input('Select your length unit: nm, µm, mm, cm, dm, m, km, in, ft, yd or mi? ')
+    length_input_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi']
     if length_input in length_input_list:
-        length_output_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi', 'nmi', 'au', 'ly', 'pc']
+        length_output_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi']
         length_output_list.remove(length_input)
-        length_output_list_question = length_output_list[0] + ", " + length_output_list[1] + ", " + length_output_list[2] + ", " + length_output_list[3] + ", " + length_output_list[4] + ", " + length_output_list[5] + ", " + length_output_list[6] + ", " + length_output_list[7] + ", " + length_output_list[8] + ", " + length_output_list[9] + ", " + length_output_list[10] + ", " + length_output_list[11] + ", " + length_output_list[12] + ", " + length_output_list[13] + " or " + length_output_list[14]
+        length_output_list_question = length_output_list[0] + ", " + length_output_list[1] + ", " + length_output_list[2] + ", " + length_output_list[3] + ", " + length_output_list[4] + ", " + length_output_list[5] + ", " + length_output_list[6] + ", " + length_output_list[7] + ", " + length_output_list[8] + ", " + length_output_list[9] + " or " + length_output_list[10]
         length_output = input('Select the length unit you want: ' + str(length_output_list_question) + "? ")
         if length_output in length_output_list:
             data = input('Enter your length: ')
@@ -43,18 +90,6 @@ def length_converter():
             # Nanometers to Miles
             if length_input == length_input_list[0] and length_output == length_output_list[9]:
                 print('Result: ' + nm_to_mi(data) + " " + length_output)
-            # Nanometers to Nautical miles
-            if length_input == length_input_list[0] and length_output == length_output_list[10]:
-                print('Result: ' + nm_to_nmi(data) + " " + length_output)
-            # Nanometers to Astronomical units
-            if length_input == length_input_list[0] and length_output == length_output_list[11]:
-                print('Result: ' + nm_to_au(data) + " " + length_output)
-            # Nanometers to Light-years
-            if length_input == length_input_list[0] and length_output == length_output_list[12]:
-                print('Result: ' + nm_to_ly(data) + " " + length_output)
-            # Nanometers to Parsecs
-            if length_input == length_input_list[0] and length_output == length_output_list[13]:
-                print('Result: ' + nm_to_pc(data) + " " + length_output)
 
             # Micrometers
             # Micrometers to Nanometers
@@ -87,18 +122,6 @@ def length_converter():
             # Micrometers to Miles
             if length_input == length_input_list[1] and length_output == length_output_list[9]:
                 print('Result: ' + µm_to_mi(data) + " " + length_output)
-            # Micrometers to Nautical miles
-            if length_input == length_input_list[1] and length_output == length_output_list[10]:
-                print('Result: ' + µm_to_nmi(data) + " " + length_output)
-            # Micrometers to Astronomical units
-            if length_input == length_input_list[1] and length_output == length_output_list[11]:
-                print('Result: ' + µm_to_au(data) + " " + length_output)
-            # Micrometers to Light-years
-            if length_input == length_input_list[1] and length_output == length_output_list[12]:
-                print('Result: ' + µm_to_ly(data) + " " + length_output)
-            # Micrometers to Parsecs
-            if length_input == length_input_list[1] and length_output == length_output_list[13]:
-                print('Result: ' + µm_to_pc(data) + " " + length_output)
 
             # Millimeters
             # Millimeters to Nanometers
@@ -131,18 +154,6 @@ def length_converter():
             # Millimeters to Miles
             if length_input == length_input_list[2] and length_output == length_output_list[9]:
                 print('Result: ' + mm_to_mi(data) + " " + length_output)
-            # Millimeters to Nautical miles
-            if length_input == length_input_list[2] and length_output == length_output_list[10]:
-                print('Result: ' + mm_to_nmi(data) + " " + length_output)
-            # Millimeters to Astronomical units
-            if length_input == length_input_list[2] and length_output == length_output_list[11]:
-                print('Result: ' + mm_to_au(data) + " " + length_output)
-            # Millimeters to Light-years
-            if length_input == length_input_list[2] and length_output == length_output_list[12]:
-                print('Result: ' + mm_to_ly(data) + " " + length_output)
-            # Millimeters to Parsecs
-            if length_input == length_input_list[2] and length_output == length_output_list[13]:
-                print('Result: ' + mm_to_pc(data) + " " + length_output)
 
             # Centimeters
             # Centimeters to Nanometers
@@ -175,18 +186,6 @@ def length_converter():
             # Centimeters to Miles
             if length_input == length_input_list[3] and length_output == length_output_list[9]:
                 print('Result: ' + cm_to_mi(data) + " " + length_output)
-            # Centimeters to Nautical miles
-            if length_input == length_input_list[3] and length_output == length_output_list[10]:
-                print('Result: ' + cm_to_nmi(data) + " " + length_output)
-            # Centimeters to Astronomical units
-            if length_input == length_input_list[3] and length_output == length_output_list[11]:
-                print('Result: ' + cm_to_au(data) + " " + length_output)
-            # Centimeters to Light-years
-            if length_input == length_input_list[3] and length_output == length_output_list[12]:
-                print('Result: ' + cm_to_ly(data) + " " + length_output)
-            # Centimeters to Parsecs
-            if length_input == length_input_list[3] and length_output == length_output_list[13]:
-                print('Result: ' + cm_to_pc(data) + " " + length_output)
 
             # Decimeters
             # Decimeters to Nanometers
@@ -219,18 +218,6 @@ def length_converter():
             # Decimeters to Miles
             if length_input == length_input_list[4] and length_output == length_output_list[9]:
                 print('Result: ' + dm_to_mi(data) + " " + length_output)
-            # Decimeters to Nautical miles
-            if length_input == length_input_list[4] and length_output == length_output_list[10]:
-                print('Result: ' + dm_to_nmi(data) + " " + length_output)
-            # Decimeters to Astronomical units
-            if length_input == length_input_list[4] and length_output == length_output_list[11]:
-                print('Result: ' + dm_to_au(data) + " " + length_output)
-            # Decimeters to Light-years
-            if length_input == length_input_list[4] and length_output == length_output_list[12]:
-                print('Result: ' + dm_to_ly(data) + " " + length_output)
-            # Decimeters to Parsecs
-            if length_input == length_input_list[4] and length_output == length_output_list[13]:
-                print('Result: ' + dm_to_pc(data) + " " + length_output)
 
             # Meters
             # Meters to Nanometers
@@ -263,18 +250,6 @@ def length_converter():
             # Meters to Miles
             if length_input == length_input_list[5] and length_output == length_output_list[9]:
                 print('Result: ' + m_to_mi(data) + " " + length_output)
-            # Meters to Nautical miles
-            if length_input == length_input_list[5] and length_output == length_output_list[10]:
-                print('Result: ' + m_to_nmi(data) + " " + length_output)
-            # Meters to Astronomical units
-            if length_input == length_input_list[5] and length_output == length_output_list[11]:
-                print('Result: ' + m_to_au(data) + " " + length_output)
-            # Meters to Light-years
-            if length_input == length_input_list[5] and length_output == length_output_list[12]:
-                print('Result: ' + m_to_ly(data) + " " + length_output)
-            # Meters to Parsecs
-            if length_input == length_input_list[5] and length_output == length_output_list[13]:
-                print('Result: ' + m_to_pc(data) + " " + length_output)
 
             # Kilometers
             # Kilometers to Nanometers
@@ -307,15 +282,131 @@ def length_converter():
             # Kilometers to Miles
             if length_input == length_input_list[6] and length_output == length_output_list[9]:
                 print('Result: ' + km_to_mi(data) + " " + length_output)
-            # Kilometers to Nautical miles
-            if length_input == length_input_list[6] and length_output == length_output_list[10]:
-                print('Result: ' + km_to_nmi(data) + " " + length_output)
-            # Kilometers to Astronomical units
-            if length_input == length_input_list[6] and length_output == length_output_list[11]:
-                print('Result: ' + km_to_au(data) + " " + length_output)
-            # Kilometers to Light-years
-            if length_input == length_input_list[6] and length_output == length_output_list[12]:
-                print('Result: ' + km_to_ly(data) + " " + length_output)
-            # Kilometers to Parsecs
-            if length_input == length_input_list[6] and length_output == length_output_list[13]:
-                print('Result: ' + km_to_pc(data) + " " + length_output)
+
+            # Inchs
+            # Inchs to Nanometers
+            if length_input == length_input_list[7] and length_output == length_output_list[0]:
+                print('Result: ' + in_to_nm(data) + " " + length_output)
+            # Inchs to Micrometers
+            if length_input == length_input_list[7] and length_output == length_output_list[1]:
+                print('Result: ' + in_to_µm(data) + " " + length_output)
+            # Inchs to Millimeters
+            if length_input == length_input_list[7] and length_output == length_output_list[2]:
+                print('Result: ' + in_to_mm(data) + " " + length_output)
+            # Inchs to Centimeters
+            if length_input == length_input_list[7] and length_output == length_output_list[3]:
+                print('Result: ' + in_to_cm(data) + " " + length_output)
+            # Inchs to Decimeters
+            if length_input == length_input_list[7] and length_output == length_output_list[4]:
+                print('Result: ' + in_to_dm(data) + " " + length_output)
+            # Inchs to Meters
+            if length_input == length_input_list[7] and length_output == length_output_list[5]:
+                print('Result: ' + in_to_m(data) + " " + length_output)
+            # Inchs to Kilometers
+            if length_input == length_input_list[7] and length_output == length_output_list[6]:
+                print('Result: ' + in_to_km(data) + " " + length_output)
+            # Inchs to Feet
+            if length_input == length_input_list[7] and length_output == length_output_list[7]:
+                print('Result: ' + in_to_ft(data) + " " + length_output)
+            # Inchs to Yards
+            if length_input == length_input_list[7] and length_output == length_output_list[8]:
+                print('Result: ' + in_to_yd(data) + " " + length_output)
+            # Inchs to Miles
+            if length_input == length_input_list[7] and length_output == length_output_list[9]:
+                print('Result: ' + in_to_mi(data) + " " + length_output)
+
+            # Feet
+            # Feet to Nanometers
+            if length_input == length_input_list[8] and length_output == length_output_list[0]:
+                print('Result: ' + ft_to_nm(data) + " " + length_output)
+            # Feet to Micrometers
+            if length_input == length_input_list[8] and length_output == length_output_list[1]:
+                print('Result: ' + ft_to_µm(data) + " " + length_output)
+            # Feet to Millimeters
+            if length_input == length_input_list[8] and length_output == length_output_list[2]:
+                print('Result: ' + ft_to_mm(data) + " " + length_output)
+            # Feet to Centimeters
+            if length_input == length_input_list[8] and length_output == length_output_list[3]:
+                print('Result: ' + ft_to_cm(data) + " " + length_output)
+            # Feet to Decimeters
+            if length_input == length_input_list[8] and length_output == length_output_list[4]:
+                print('Result: ' + ft_to_dm(data) + " " + length_output)
+            # Feet to Meters
+            if length_input == length_input_list[8] and length_output == length_output_list[5]:
+                print('Result: ' + ft_to_m(data) + " " + length_output)
+            # Feet to Kilometers
+            if length_input == length_input_list[8] and length_output == length_output_list[6]:
+                print('Result: ' + ft_to_km(data) + " " + length_output)
+            # Feet to Inchs
+            if length_input == length_input_list[8] and length_output == length_output_list[7]:
+                print('Result: ' + ft_to_in(data) + " " + length_output)
+            # Feet to Yards
+            if length_input == length_input_list[8] and length_output == length_output_list[8]:
+                print('Result: ' + ft_to_yd(data) + " " + length_output)
+            # Feet to Miles
+            if length_input == length_input_list[8] and length_output == length_output_list[9]:
+                print('Result: ' + ft_to_mi(data) + " " + length_output)
+
+            # Yards
+            # Yards to Nanometers
+            if length_input == length_input_list[9] and length_output == length_output_list[0]:
+                print('Result: ' + yd_to_nm(data) + " " + length_output)
+            # Yards to Micrometers
+            if length_input == length_input_list[9] and length_output == length_output_list[1]:
+                print('Result: ' + yd_to_µm(data) + " " + length_output)
+            # Yards to Millimeters
+            if length_input == length_input_list[9] and length_output == length_output_list[2]:
+                print('Result: ' + yd_to_mm(data) + " " + length_output)
+            # Yards to Centimeters
+            if length_input == length_input_list[9] and length_output == length_output_list[3]:
+                print('Result: ' + yd_to_cm(data) + " " + length_output)
+            # Yards to Decimeters
+            if length_input == length_input_list[9] and length_output == length_output_list[4]:
+                print('Result: ' + yd_to_dm(data) + " " + length_output)
+            # Yards to Meters
+            if length_input == length_input_list[9] and length_output == length_output_list[5]:
+                print('Result: ' + yd_to_m(data) + " " + length_output)
+            # Yards to Kilometers
+            if length_input == length_input_list[9] and length_output == length_output_list[6]:
+                print('Result: ' + yd_to_km(data) + " " + length_output)
+            # Yards to Inchs
+            if length_input == length_input_list[9] and length_output == length_output_list[7]:
+                print('Result: ' + yd_to_in(data) + " " + length_output)
+            # Yards to Feet
+            if length_input == length_input_list[9] and length_output == length_output_list[8]:
+                print('Result: ' + yd_to_ft(data) + " " + length_output)
+            # Yards to Miles
+            if length_input == length_input_list[9] and length_output == length_output_list[9]:
+                print('Result: ' + yd_to_mi(data) + " " + length_output)
+
+            # Miles
+            # Miles to Nanometers
+            if length_input == length_input_list[10] and length_output == length_output_list[0]:
+                print('Result: ' + mi_to_nm(data) + " " + length_output)
+            # Miles to Micrometers
+            if length_input == length_input_list[10] and length_output == length_output_list[1]:
+                print('Result: ' + mi_to_µm(data) + " " + length_output)
+            # Miles to Millimeters
+            if length_input == length_input_list[10] and length_output == length_output_list[2]:
+                print('Result: ' + mi_to_mm(data) + " " + length_output)
+            # Miles to Centimeters
+            if length_input == length_input_list[10] and length_output == length_output_list[3]:
+                print('Result: ' + mi_to_cm(data) + " " + length_output)
+            # Miles to Decimeters
+            if length_input == length_input_list[10] and length_output == length_output_list[4]:
+                print('Result: ' + mi_to_dm(data) + " " + length_output)
+            # Miles to Meters
+            if length_input == length_input_list[10] and length_output == length_output_list[5]:
+                print('Result: ' + mi_to_m(data) + " " + length_output)
+            # Miles to Kilometers
+            if length_input == length_input_list[10] and length_output == length_output_list[6]:
+                print('Result: ' + mi_to_km(data) + " " + length_output)
+            # Miles to Inchs
+            if length_input == length_input_list[10] and length_output == length_output_list[7]:
+                print('Result: ' + mi_to_in(data) + " " + length_output)
+            # Miles to Feet
+            if length_input == length_input_list[10] and length_output == length_output_list[8]:
+                print('Result: ' + mi_to_ft(data) + " " + length_output)
+            # Miles to Yards
+            if length_input == length_input_list[10] and length_output == length_output_list[9]:
+                print('Result: ' + mi_to_yd(data) + " " + length_output)
