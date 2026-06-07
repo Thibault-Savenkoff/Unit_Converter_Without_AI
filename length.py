@@ -19,6 +19,11 @@ def nm_to_cm(x):
     sum = float(x) * float(10**(-7))
     return str(sum)
 
+# Nanometers to Decimeters
+def nm_to_dm(x):
+    sum = float(x) * float(10**(-8))
+    return str(sum)
+
 # Nanometers to Meters
 def nm_to_m(x):
     sum = float(x) * float(10**(-9))
@@ -49,6 +54,111 @@ def nm_to_mi(x):
     sum = float(x) * float(6.2137119223733*10**(-13))
     return str(sum)
 
+# Micrometers
+
+# Micrometers to Nanometers
+def µm_to_nm(x):
+    sum = float(x) * float(10**(3))
+    return str(sum)
+
+# Micrometers to Millimeters
+def µm_to_mm(x):
+    sum = float(x) * float(10**(-3))
+    return str(sum)
+
+# Micrometers to Centimeters
+def µm_to_cm(x):
+    sum = float(x) * float(10**(-4))
+    return str(sum)
+
+# Micrometers to Decimeters
+def µm_to_dm(x):
+    sum = float(x) * float(10**(-5))
+    return str(sum)
+
+# Micrometers to Meters
+def µm_to_m(x):
+    sum = float(x) * float(10**(-6))
+    return str(sum)
+
+# Micrometers to Kilometers
+def µm_to_km(x):
+    sum = float(x) * float(10**(-9))
+    return str(sum)
+
+# Micrometers to Inchs
+def µm_to_in(x):
+    sum = float(x) * float(3.93701*10**(-5))
+    return str(sum)
+
+# Micrometers to Feet
+def µm_to_ft(x):
+    sum = float(x) * float(3.2808398950131*10**(-6))
+    return str(sum)
+
+# Micrometers to Yards
+def µm_to_yd(x):
+    sum = float(x) * float(1.0936132983377*10**(-6))
+    return str(sum)
+
+# Micrometers to Miles
+def µm_to_mi(x):
+    sum = float(x) * float(6.2137119223733*10**(-10))
+    return str(sum)
+
+# Millimeters
+
+# Millimeters to Nanometers
+def mm_to_nm(x):
+    sum = float(x) * float(10**(6))
+    return str(sum)
+
+# Millimeters to Micrometers
+def mm_to_µm(x):
+    sum = float(x) * float(10**(3))
+    return str(sum)
+
+# Millimeters to Centimeters
+def mm_to_cm(x):
+    sum = float(x) * float(10**(-1))
+    return str(sum)
+
+# Millimeters to Decimeters
+def mm_to_dm(x):
+    sum = float(x) * float(10**(-2))
+    return str(sum)
+
+# Millimeters to Meters
+def mm_to_m(x):
+    sum = float(x) * float(10**(-3))
+    return str(sum)
+
+# Millimeters to Kilometers
+def mm_to_km(x):
+    sum = float(x) * float(10**(-6))
+    return str(sum)
+
+# Millimeters to Inchs
+def mm_to_in(x):
+    sum = float(x) * float(0.0393700787)
+    return str(sum)
+
+# Millimeters to Feet
+def mm_to_ft(x):
+    sum = float(x) * float(0.0032808399)
+    return str(sum)
+
+# Millimeters to Yards
+def mm_to_yd(x):
+    sum = float(x) * float(0.0010936133)
+    return str(sum)
+
+# Millimeters to Miles
+def mm_to_mi(x):
+    sum = float(x) * float(6.2137119223733*10**(-7))
+    return str(sum)
+
+# Length
 def length_converter():
     length_input = input('Select your length unit: nm, µm, mm, cm, dm, m, km, in, ft, yd or mi? ')
     length_input_list = ['nm', 'µm', 'mm', 'cm', 'dm', 'm', 'km', 'in', 'ft', 'yd', 'mi']
